@@ -1,0 +1,473 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #007bff; /* Blue color */
+  color: white;
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* Align content to the right */
+  font-size: 18px;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Banner Section */
+.banner {
+  background-color: #007bff; /* Blue color for banner */
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+  width: 100vw;  /* Use full viewport width */
+  margin-top: 20px; /* Space between navbar and banner */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative; /* Ensure no overlap or overflow */
+  left: 0; /* Align to the left edge */
+  right: 0; /* Align to the right edge */
+}
+
+/* Banner Text Styling */
+.banner h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.banner p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.banner .username {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffe600; /* Highlight username with yellow */
+}
+
+.cards-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 30px;
+  margin: 50px auto;
+  padding: 20px;
+  width: 60%; /* Adjust width to center content */
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: white;
+  padding: 25px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: #007bff;
+  color: white;
+  transform: translateY(-5px);
+}
+
+.card i {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+.card:hover i {
+  color: white;
+}
+
+.button {
+  padding: 12px 25px;
+  background-color: white;
+  color: #007bff;
+  border: 1px solid #007bff;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .cards-section {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .cards-section {
+    grid-template-columns: repeat(1, 1fr); /* 1 card per row */
+    width: 90%;
+  }
+}
+
+
+
+/* Icon inside Card */
+.card i {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+/* General Styles */
+.upcoming-details {
+  text-align: center;
+  padding: 50px;
+  background: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Events Container */
+.events-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 80%;
+  max-width: 1200px;
+}
+
+/* Event Card */
+.event-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+  width: 45%;
+  min-width: 350px;
+  text-align: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.event-card:hover {
+  transform: scale(1.05);
+  background-color: #007bff;
+  color: white;
+}
+
+.event-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.event-content {
+  padding: 20px;
+}
+
+.event-content h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.event-content p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* View All Button */
+.view-details-btn {
+  margin-top: 40px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.view-details-btn:hover {
+  background: #2575fc;
+}
+
+
+/* Full Page coupon Background */
+/* General Styling */
+.my-coupons {
+  text-align: center;
+  padding: 40px;
+  background: #f5f7fa;
+  min-height: 100vh;
+}
+
+.my-coupons h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Coupons Container */
+.coupons-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Individual Coupon Card */
+.coupon-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.coupon-card:hover {
+  transform: scale(1.05);
+}
+
+.coupon-card h3 {
+  font-size: 1.4rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.coupon-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+
+/* Food Coupons Section */
+.food-coupons-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.food-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.food-item:hover {
+  transform: scale(1.03);
+  background-color: #007bff;
+}
+
+.food-details {
+  text-align: left;
+  flex: 1;
+  padding-left: 20px;
+}
+
+.food-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+
+/* Full-width Profile Container */
+.profile-container {
+  width: 100%;
+  height: 100vh; /* Full screen height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #ece7e9, #ece7e9);
+}
+
+/* Profile Card (Center Layout) */
+.profile-card {
+  width: 60%; /* Takes 60% of the screen */
+  background: #007bff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(25, 18, 18, 0.1);
+  text-align: center;
+  position: relative;
+}
+
+/* Profile Image */
+.profile-header {
+  position: relative;
+  top: -50px;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+/* Name & Location */
+.user-name {
+  font-size: 28px;
+  color: white;
+  margin-top: -20px;
+}
+
+.user-location {
+  font-size: 16px;
+  color: white;
+}
+
+/* Bio */
+.user-bio {
+  font-size: 18px;
+  color: white;
+  margin: 15px 0;
+  white-space: pre-line;
+}
+
+/* Profile Stats */
+.profile-stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 25px 0;
+}
+
+.profile-stats div {
+  text-align: center;
+}
+
+.profile-stats h3 {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+/* Button */
+.show-more-btn {
+  background: white;
+  color: rgb(14, 5, 5);
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.show-more-btn:hover {
+  background: #ff4e2b;
+}
+
+/* Full Page Background */
+.event-container {
+  width: 100%;
+  height: 100vh;
+  background: white;
+  color: black;
+  text-align: center;
+  padding: 40px 0;
+  
+}
+
+/* Event Details Box */
+.event-details {
+  background: #007bff;
+  color: white;
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.event-description {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* Coupon Card Section */
+.coupon-cards {
+  display: flex;
+  color: #000000;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.coupon-card {
+  background: #007bff;
+  color: white;
+  width: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.coupon-card h3 {
+  color: #ead112;
+}
+
+.claim-btn {
+  background: white;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.claim-btn:hover {
+  background: #1e5acc;
+  color: white;
+}
