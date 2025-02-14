@@ -1,0 +1,108 @@
+/* General Styling */
+body {
+    background-color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    background-color: #007bff;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .navbar ul li {
+    margin: 0 15px;
+  }
+  
+  .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  /* Profile Container */
+  .profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px); /* Adjust height considering navbar */
+    background-color: white; /* White background */
+  }
+  
+  /* Profile Card */
+  .profile-card {
+    background-color: white;
+    width: 450px; /* Bigger card */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    text-align: center;
+  }
+  
+  /* Profile Image */
+  .profile-image img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 3px solid #007bff;
+  }
+  
+  /* Profile Details */
+  .profile-details {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .profile-name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .profile-email,
+  .profile-phone,
+  .profile-address,
+  .profile-coupons,
+  .profile-membership {
+    margin: 5px 0;
+  }
+  
+  /* Buttons */
+  .edit-button,
+  .save-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
+  .edit-button:hover,
+  .save-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Input fields when editing */
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  

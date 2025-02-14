@@ -1,0 +1,145 @@
+/* General Styling */
+body {
+    background-color: #f9f9f9;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #007bff;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .navbar ul li {
+    margin: 0 15px;
+  }
+  
+  .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  /* Coupons Container */
+  .coupons-container {
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  /* Event Coupons Section */
+  .event-coupons, .food-coupons, .event-highlights {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .event-coupons h2, .food-coupons h2, .event-highlights h2 {
+    color: #007bff;
+    text-align: center;
+  }
+  
+  /* Coupon Cards */
+  .coupons-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .coupon-card {
+    background: linear-gradient(to right, #fae17e, #ffcc00);
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+    color: white;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .coupon-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .claim-btn {
+    background-color: white;
+    color: #ff7e5f;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  /* Food Coupons Section */
+  .food-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .food-card {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    width: 180px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .food-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .order-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  /* Event Highlights (Slider) */
+  .slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .slider img {
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+  }
+  
+  .prev-btn, .next-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
